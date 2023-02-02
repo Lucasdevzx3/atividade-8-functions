@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.js" />
+    <title>Atividade 8 Functions</title>
+  </head>
+  <body>
+    <h1>Eae</h1>
+    <a href="./atividade2.html" target="_blank"> Atividade 2</a>
+    <script>
+      // Crie uma função que recebe 3 notas de um aluno por parâmetro e
+      //uma letra. Se a letra for A a função deve calcular a média aritmética,
+      //se for P, a média ponderada (peso: 5, 3 e 2).
+
+      function calcularMedia(nota1, nota2, nota3, tipo) {
+        if (tipo === "A") {
+          return (nota1 + nota2 + nota3) / 3;
+        } else if (tipo === "P") {
+          return (nota1 * 5 + nota2 * 3 + nota3 * 2) / 10;
+        } else {
+          return "Tipo inválido!";
+        }
+      }
+
+      console.log(calcularMedia(7, 8, 9, "A")); // 8
+      console.log(calcularMedia(7, 8, 9, "P")); // 8.1
+    </script>
+  </body>
+</html>

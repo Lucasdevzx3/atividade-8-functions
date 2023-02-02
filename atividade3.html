@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+                Crie uma função que recebe por parâmetro um valor inteiro e
+        positivo e retorne verdadeiro se o número for primo ou falso se não
+        for.
+
+        function primo
+        return
+        for para verificar
+        
+    -->
+    <script>
+      function isPrime(num) {
+        if (num <= 1) {
+          return false;
+        }
+        for (let i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+
+      let value = 11;
+      console.log(isPrime(value));
+    </script>
+  </body>
+</html>
